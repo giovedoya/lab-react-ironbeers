@@ -28,12 +28,12 @@ export default function Beers() {
 
       {beers.map((elem) => {
         return (
-          <div key={elem.id}>
+          <div key={elem._id}>
             <img width="150px" src={elem.image_url} alt={elem.name} />
             <h2>{elem.name}</h2>
             <p>{elem.tagline}</p>
             <p>{elem.contributed_by}</p>
-            <Link to={`/beers/${elem.id}`}>See more</Link>
+            <Link to={`/beers/${elem._id}`}>See more</Link>
           </div>
         );
       })}
